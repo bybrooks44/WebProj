@@ -1,0 +1,57 @@
+/* General page styles */
+body {
+  background-color: #b0ccde;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+/* Title styles */
+h1 {
+  color: #0066cc;
+  text-align: center;
+}
+
+/* Subheading styles */
+h2 {
+  color: #009933;
+  margin-top: 40px;
+}
+
+/* Styled image */
+img {
+  border: 3px solid #444;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Embedded YouTube video style */
+iframe {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+}
+
+/* Styled divs (3 minimum required) */
+.div1 {
+  background-color: #e6f7ff;
+  border: 2px dashed #888;
+  padding: 15px;
+  margin: 20px;
+}
+
+.div2 {
+  background-color: #fffbe6;
+  border: 2px solid #cc9900;
+  padding: 15px;
+  margin: 20px;
+}
+
+.div3 {
+  background-color: #f9e6ff;
+  border: 2px dotted #cc66cc;
+  padding: 15px;
+  margin: 20px;
+}
+

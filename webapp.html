@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Business Buzzword Generator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #e3f2fd, #bbdefb);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    #buzzword {
+      font-size: 1.8rem;
+      margin: 30px 0;
+      padding: 20px;
+      border: 2px dashed #1976d2;
+      background-color: #fff;
+      display: inline-block;
+      min-height: 80px;
+      width: 60%;
+      border-radius: 10px;
+    }
+
+    button {
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0d47a1;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 40px;
+      color: #1976d2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Business Buzzword Generator</h1>
+
+  <div id="buzzword">Click the button to generate a buzzword!</div><br>
+
+  <button onclick="generateBuzzword()">Generate Buzzword</button>
+
+  <br><a href="scratch.html">← Back to Scratch Page</a>
+
+  <script>
+    const buzzwords = [
+      "Leverage scalable synergy",
+      "Streamline vertical integration",
+      "Optimize proactive bandwidth",
+      "Revolutionize mission-critical assets",
+      "Empower frictionless ROI",
+      "Monetize agile frameworks",
+      "Accelerate end-to-end deliverables",
+      "Disrupt dynamic paradigms",
+      "Align robust workflows",
+      "Gamify core competencies",
+      "Facilitate scalable solutions",
+      "Reinvent strategic roadmaps",
+      "Enhance cross-functional innovation",
+      "Deploy cutting-edge methodologies",
+      "Reimagine user-centered platforms"
+    ];
+
+    function generateBuzzword() {
+      const randomIndex = Math.floor(Math.random() * buzzwords.length);
+      document.getElementById("buzzword").innerText = buzzwords[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
